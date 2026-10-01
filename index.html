@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EstágioJá - Vagas de Estágio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>Estágio<span>Já</span></h2>
+        <nav>
+            <a href="#vagas">Vagas</a>
+            <a href="#cadastro">Cadastrar vaga</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Encontre sua próxima oportunidade de estágio!</h1>
+            <p>Conectamos estudantes a oportunidades para construir o futuro profissional.</p>
+            <a href="#vagas" class="btn">Ver vagas disponíveis</a>
+        </div>
+    </section>
+
+    <section id="vagas" class="vagas">
+        <h2>Vagas de Estágio</h2>
+        <p>Confira as oportunidades disponíveis.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Vaga</th>
+                    <th>Empresa</th>
+                    <th>Modalidade</th>
+                    <th>Local</th>
+                    <th>Bolsa</th>
+                </tr>
+            </thead>
+
+            <tbody id="listaVagas">
+                <tr>
+                    <td colspan="5">Nenhuma vaga cadastrada ainda.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cadastro" class="cadastro">
+        <h2>Divulgue uma vaga de estágio</h2>
+        <p>Preencha os dados abaixo para publicar uma oportunidade.</p>
+
+        <form id="formVaga">
+
+            <label for="vaga">Nome da vaga</label>
+            <input type="text" id="vaga" placeholder="Ex: Estágio em Administração" required>
+
+            <label for="empresa">Nome da empresa</label>
+            <input type="text" id="empresa" placeholder="Nome da empresa" required>
+
+            <label for="modalidade">Modalidade</label>
+            <select id="modalidade" required>
+                <option value="">Selecione</option>
+                <option value="Presencial">Presencial</option>
+                <option value="Híbrido">Híbrido</option>
+                <option value="Remoto">Remoto</option>
+            </select>
+
+            <label for="local">Cidade / Estado</label>
+            <input type="text" id="local" placeholder="Ex: Fortaleza - CE" required>
+
+            <label for="bolsa">Bolsa-auxílio</label>
+            <input type="text" id="bolsa" placeholder="Ex: R$ 1.200,00">
+
+            <button type="submit">Publicar vaga</button>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 EstágioJá - Conectando talentos e oportunidades.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
